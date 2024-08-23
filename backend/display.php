@@ -1,8 +1,8 @@
 <?php
-$allowed_referer = 'http://localhost:3000/index.html';
-if (!isset($_SERVER['HTTP_REFERER']) || $_SERVER['HTTP_REFERER'] !== $allowed_referer) {
-    die('Access denied');
-}
+// $allowed_referer = 'https://990b-102-89-23-43.ngrok-free.app/index.html';
+// if (!isset($_SERVER['HTTP_REFERER']) || $_SERVER['HTTP_REFERER'] !== $allowed_referer) {
+//     die('Access denied');
+// }
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Retrieve the JSON data sent from the frontend
     $postData = file_get_contents("php://input");

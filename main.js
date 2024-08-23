@@ -10,7 +10,7 @@ document.getElementById('translateBtn').addEventListener('click', function () {
     document.getElementById('translatedText').innerHTML = "Translating...";
 
     // Step 1: Send the request to the Flask API to get the translated text
-    fetch('http://localhost:3000/backend/display.php', {
+    fetch('https://990b-102-89-23-43.ngrok-free.app/backend/display.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
